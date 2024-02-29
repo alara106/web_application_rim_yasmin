@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img-film {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    /* Coins arrondis de l'image */
+}
+
+
+.detail-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    /* Couleur de fond du bouton */
+    color: white;
+    /* Couleur du texte */
+    border: none;
+    padding: 10px 20px;
+    /* Espacement intérieur */
+    border-radius: 5px;
+    /* Coins arrondis */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Transition de couleur de fond */
+}
+
+.detail-button:hover {
+    background-color: #0056b3;
+    /* Au survol, changement de couleur de fond */
+}
+
+:root {
+    --primary-color: #4f020c;
+    --highlight-color: #7a643f;
+    --button-padding: 12px 24px;
+}
+
+body {
+    background-color: #ECF0F1;
+}
+
+.nav-list {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.input {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    width: 300px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+    /* Au survol, l'overlay devient opaque */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Couleur d'arrière-plan semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    /* Opacité initiale à 0 pour que l'overlay soit invisible */
+    transition: opacity 0.3s ease;
+    /* Transition d'opacité */
+}
+
+.overlay h3 {
+    color: white;
+    text-align: center;
+}
+
+.rating-icon {
+    margin-left: 10px;
+    color: var(--highlight-color);
+}
+
+.detail-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--button-padding);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.detail-button:hover {
+    background-color: var(--highlight-color);
+}
+
+.film-detail {
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+
+}
+
+.film-detail img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.film-detail h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.film-detail button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+.film-detail button:hover {
+    background-color: #ff7f50;
+}
+const data {
+    background-color: #4f020c;
+
+}
